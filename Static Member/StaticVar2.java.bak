@@ -1,0 +1,32 @@
+class StaticVar2 
+{
+	static String s;
+	public static void main(String[] args) 
+	{
+		//System.out.println(StaticVar1.str);
+		System.out.println(s);    //null
+
+		test();
+
+		System.out.println(s);    //Jspiders
+
+		s="Pyspiders";
+
+		System.out.println(s);   //pyspiders
+
+		test();
+	}
+	public static void test()
+	{
+		System.out.println(s);     //null
+
+		String s="Qspiders";
+
+		System.out.println(s);    //Qspiders
+
+		s="Jspiders";
+
+		System.out.println(s);    //Jspiders
+
+	}
+}

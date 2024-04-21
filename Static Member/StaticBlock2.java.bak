@@ -1,0 +1,34 @@
+import java.util.Scanner;
+class StaticBlock2 
+{
+	static Scanner sc;
+
+	static 
+	{
+		sc=new Scanner(System.in);
+		System.out.println("Global ref is availble!!!");
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("From Main()");
+		System.out.println("Enter the First Number :");
+		int num1=sc.nextInt();
+
+		System.out.println("Enter the Second  Number :");
+		int num2=sc.nextInt();
+
+		System.out.println("The Addition is : "+(num1+num2));
+		merge();
+
+	}
+	public static void merge()
+	{
+		System.out.println("Enter the First Name : ");
+		String fname=sc.next();
+
+		System.out.println("Enter the Last name : ");
+		String lname=sc.next();
+
+		System.out.println("The Name is : "+(fname+" "+lname));
+	}
+}
