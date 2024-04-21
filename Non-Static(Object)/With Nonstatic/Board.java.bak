@@ -1,0 +1,56 @@
+class  Board
+{
+	static String material;
+	static String nail;
+	static String shape;
+	static String size;
+	static String color;
+	static double price;
+
+	public static void main(String[] args)
+	{
+		mat();
+		nail();
+		shape();
+		size();
+		color();
+		price();
+
+		display();
+	}	
+	public static void mat()
+	{
+		System.out.println("From Material() : "+material);
+	}
+	public static void nail()
+	{
+		System.out.println("From nail() : "+nail);
+	}
+	public static void shape()
+	{
+		System.out.println("From shape() : "+shape);
+	}
+	public static void size()
+	{
+		System.out.println("From Size() : "+size);
+	}
+	public static void color()
+	{
+		System.out.println("From Color() : "+color);
+	}
+	public static void price()
+	{
+		System.out.println(price);
+	}
+	public static void display()
+	{
+		System.out.println("-----------------------");
+		System.out.println("From Display()");
+		System.out.println(mat);
+		System.out.println(nail);
+		System.out.println(shape);
+		System.out.println(size);
+		System.out.println(color);
+		System.out.println(price);
+	}
+}

@@ -1,0 +1,26 @@
+class LaptopDriver 
+{
+	public static void main(String[] args) 
+	{
+		Laptop l1=new Laptop();
+		System.out.println("-------------------------");
+		System.out.println("OS is : "+l1.OS);
+		System.out.println("Screen is : "+l1.screen);
+		System.out.println("Shape is : "+l1.shape);
+		System.out.println("RAM is : "+l1.RAM);
+
+		Laptop l2=new Laptop();
+		System.out.println("-------------------------");
+		l2.OS="Window";
+		l2.screen=12.5;
+		l2.shape="Recangle";
+		l2.RAM=64;
+		System.out.println("OS is : "+l1.OS);
+		System.out.println("Screen is : "+l1.screen);
+		System.out.println("Shape is : "+l1.shape);
+		System.out.println("RAM is : "+l1.RAM);
+
+
+		Laptop.display();
+	}
+}

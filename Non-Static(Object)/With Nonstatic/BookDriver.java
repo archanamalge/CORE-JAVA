@@ -1,0 +1,32 @@
+class BoardDriver 
+{
+	public static void main(String[] args) 
+	{
+		Board b1=new Board();
+		System.out.println("----------------------------");
+		b1.material="fiber";
+		b1.nail="Steel";
+		b1.shape="rectangle";
+		b1.size="20 * 20";
+		b1.color="White Board";
+		b1.price=1200;
+		System.out.println("Refernce is : "+b1);
+		System.out.println("Material is :"+b1.material);
+		System.out.println("Nail : "+b1.nail);
+		System.out.println("Shape : "+b1.shape);
+		System.out.println("Size : "+b1.size);
+		System.out.println("Price : "+b1.price);
+		System.out.println("Color is : "+b1.color);
+		System.out.println("----------------------------");
+
+		Board b2=new Board();
+		System.out.println("Refernce is : "+b2);
+		System.out.println("Material is :"+b2.material);
+		System.out.println("Nail : "+b2.nail);
+		System.out.println("Shape : "+b2.shape);
+		System.out.println("Size : "+b2.size);
+		System.out.println("Price : "+b2.price);
+		System.out.println("Color is : "+b2.color);
+		System.out.println("----------------------------");
+	}
+}

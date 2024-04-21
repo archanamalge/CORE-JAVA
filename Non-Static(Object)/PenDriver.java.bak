@@ -1,0 +1,23 @@
+class PenDriver 
+{
+	public static void main(String[] args) 
+	{
+		Pen p1=new Pen();
+		System.out.println("------------------------------");
+		System.out.println("Material is : "+p1.material);
+		System.out.println("ink type : "+p1.ink);
+		System.out.println("Capacity of ink : "+p1.cap_ink);
+		System.out.println("Type of Pen : "+p1.type);
+
+	    Pen p2=new Pen();
+		System.out.println("------------------------------");
+		p2.material="Plastic";
+		p2.ink="water Ink";
+		p2.cap_ink="8ml";
+		System.out.println("Material is : "+p2.material);
+		System.out.println("ink type : "+p2.ink);
+		System.out.println("Capacity of ink : "+p2.cap_ink);
+		System.out.println("Type of Pen : "+p2.type);
+
+	}
+}

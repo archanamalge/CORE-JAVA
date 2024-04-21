@@ -1,0 +1,14 @@
+class BookDriver 
+{
+	public static void main(String[] args) 
+	{
+		Book b1=new Book();
+		Book b2=new Book();
+
+		System.out.println("B1 : "+b1);
+		System.out.println("B2 : "+b2);
+
+
+		Book.display();
+	}
+}

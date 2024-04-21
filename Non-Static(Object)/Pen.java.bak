@@ -1,0 +1,7 @@
+class Pen 
+{
+	static String material;
+	static String  ink;
+	static double cap_ink;
+	static String type;
+}
