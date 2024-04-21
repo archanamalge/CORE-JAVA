@@ -1,0 +1,23 @@
+class SquareDigit
+{
+	public static void main(String[] args) 
+	{
+		Extract();
+		//sumSq();
+	}
+	public static void Extract()
+	{
+		int sq=0;
+		int sum=0;
+		int num=1234;
+		while(num!=0)
+		{
+			int last=num%10;	
+			sq=last*last;
+			System.out.print(sq+",");
+			sum+=sq;
+			num/=10;
+		}
+		System.out.println("The Sum of Digit :"+sum);
+	}
+}
