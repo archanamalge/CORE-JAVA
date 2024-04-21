@@ -1,0 +1,14 @@
+class CharCoversion 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+	}
+	public static void upperCase()
+	{
+		if(ch>=65 && ch<=98)
+		{
+			System.out.println("Upper To Lower is : "+(char)(ch+32));
+		}
+	}
+}

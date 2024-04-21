@@ -1,0 +1,45 @@
+class RangePalindromicEven 
+{
+	public static void main(String[] args) 
+	{
+		int ip=555
+			;
+		int num=ip;
+		//int rev =0;
+		
+		int ans=reverse(ip);
+
+		int start=1;
+		int end =100;
+
+		while(start<=end)
+		{
+			if(
+				checkPalinEven(start))
+			{
+				System.out.println(start);
+			}
+			start++;
+		}
+
+	}
+	public static int reverse(int num)
+	{
+		int rev=0;
+		while(num!=0)
+		{
+			rev=rev*10+(num%10);
+			num/=10;
+		}
+		return rev;
+	}
+	public static boolean checkPalin(int rev,int ip)
+	{
+		return rev==ip;
+	}
+	public static boolean checkPalinEven(int num)
+	{
+		return num%2==0;
+	}
+	
+}

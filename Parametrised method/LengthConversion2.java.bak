@@ -1,0 +1,26 @@
+class LengthConversion2
+{
+	public static void main(String[] args) 
+	{
+		meterTocm(2050);
+	}
+	public static void meterTocm(double meter)
+	{
+		double cm=meter*100;
+		System.out.println("Meter To Cm is:"+cm);
+
+		cmToInch(cm);
+	}
+	public static void cmToInch(double cm)
+	{
+		double inch=cm/2.5;
+		System.out.println("Cm To Inch is : "+inch);
+
+		inchToFoot(inch);
+	}
+	public static void inchToFoot(double inch)
+	{
+		double foot=inch/12;
+		System.out.println("Inch to Foot is : "+foot);
+	}
+}

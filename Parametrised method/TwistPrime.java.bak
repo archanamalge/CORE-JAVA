@@ -1,0 +1,47 @@
+class TwistPrime
+{
+	public static void main(String[] args) 
+	{
+		int num=17;
+		int num2=num;
+
+		System.out.println("The Given "+num+ " is prime ?? "+primeCheck(num));
+
+		if(primeCheck(num))
+		{
+			if(reverse(num))
+			{
+				System.out.println(num+" is Twisted Prime Number");
+			}
+			else
+			{
+				System.out.println(num+" is Not Twisted Prime Number");
+			}
+		}
+
+
+	}
+	public static boolean primeCheck(int num)
+	{
+		for(int i=0;i<num;i++)
+		{
+			if(num%2==0)
+			{
+				break;
+			}
+			return num==0;
+		}
+
+	}
+	public static boolean reverse(int num)
+	{
+		int rev=0;
+
+		while(num!=0)
+		{
+			rev=rev*10+(num%10);
+			num/=10;;
+		}
+		return rev==num;
+	}
+}
